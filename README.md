@@ -78,6 +78,8 @@ Do not load the original `ASPISC98.SYS` and patched `ASPISC8.SYS` at the same ti
 
 `MODISK.SYS` Ver.1.40 does not require modification. Its `/ASPI /LUN` options scan LUN 0 through 7 and register supported removable devices separately.
 
+Confirmed on a DATASTATION DTST-H640: MOUTL detects both LUN 0 and LUN 1 with the `ASPI LUN` options, and the ATA card on LUN 1 can be formatted and accessed normally.
+
 ## Notes
 
 - The modification affects all SCSI commands sent through this ASPI manager.
